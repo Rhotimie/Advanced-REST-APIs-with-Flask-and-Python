@@ -1,0 +1,18 @@
+--setting up stripe account
+--creating charges so that we can take money from user's payment method
+--how to asks user's payment info in a secure way
+--stripe API is super straight forward and it comes with a python library we can use that makes making a charge to a 
+    user' payment method a matter of a couple of lines
+--They provide a lot of UI like providing various components we can put in our HTML pages
+--Good pricing, as pricing model is what determines what payment system we deploy
+    --The pricing plan is reasonably high because of the things we get for free like their UI components, Forms, with nice
+        API thus saving us lots of time which is a trade-off here
+--To move past the TEST API, we may have to use the "activate you account"
+--storing card numbers, CVV, and some personal details requires operating in a PCI/PCID compliant way
+    --PCI: Payment Card Industry Security Standard
+    --PCID: Payment Card Industry Data Security Standard
+Stripe does collecting of payment details for us in a PCI compliant way through Tokenization
+Tokenization ensures that no sensitive card data ever needs to touch your server so that our integration can operate in 
+    a PCE cqmpliant way. Card details are never fully revealed although Stripes Dashboard and API do provide limited
+    information about the card (such as its last four digits, expiration date, and brand). 
+
